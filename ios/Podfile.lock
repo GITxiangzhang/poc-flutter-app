@@ -1,0 +1,39 @@
+PODS:
+  - amap_location (0.0.1):
+    - AMapLocation
+    - Flutter
+  - AMapFoundation (1.5.6)
+  - AMapLocation (2.6.1):
+    - AMapFoundation (~> 1.4)
+  - Flutter (1.0.0)
+  - flutter_webview_plugin (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - amap_location (from `.symlinks/plugins/amap_location/ios`)
+  - Flutter (from `.symlinks/flutter/ios`)
+  - flutter_webview_plugin (from `.symlinks/plugins/flutter_webview_plugin/ios`)
+
+SPEC REPOS:
+  https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
+    - AMapFoundation
+    - AMapLocation
+
+EXTERNAL SOURCES:
+  amap_location:
+    :path: ".symlinks/plugins/amap_location/ios"
+  Flutter:
+    :path: ".symlinks/flutter/ios"
+  flutter_webview_plugin:
+    :path: ".symlinks/plugins/flutter_webview_plugin/ios"
+
+SPEC CHECKSUMS:
+  amap_location: a3e2a140bb25950d4e97560ce1b00e53a121e4f4
+  AMapFoundation: 20fce2a12cd152e1092afdd04379cdac21932185
+  AMapLocation: cf024b53dc03663efb4ea4bcce27d4cce58bb97a
+  Flutter: 58dd7d1b27887414a370fcccb9e645c08ffd7a6a
+  flutter_webview_plugin: ed9e8a6a96baf0c867e90e1bce2673913eeac694
+
+PODFILE CHECKSUM: 1f91b37917c3847664b6bc594860a9911fb88c0d
+
+COCOAPODS: 1.6.1
