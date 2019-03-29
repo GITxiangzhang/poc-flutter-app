@@ -7,6 +7,7 @@ import com.example.poc_flutter_app.dialog.AddItemDialog;
 import java.util.HashMap;
 
 import io.flutter.app.FlutterActivity;
+import io.flutter.app.FlutterFragmentActivity;
 import io.flutter.plugin.common.MethodCall;
 import io.flutter.plugin.common.MethodChannel;
 
@@ -37,7 +38,7 @@ class DealMethodCall {
      * @param methodCall methodCall
      * @param result     result
      */
-    static void onMethodCall(FlutterActivity activity, MethodCall methodCall,
+    static void onMethodCall(FlutterFragmentActivity activity, MethodCall methodCall,
                              final MethodChannel.Result result) {
 //        if (methodNames.get("showdialog").equals(methodCall.method)) {
 //            //显示dialog

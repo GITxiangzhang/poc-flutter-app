@@ -12,6 +12,7 @@ import com.example.poc_flutter_app.MainActivity;
 import com.example.poc_flutter_app.R;
 import com.example.poc_flutter_app.detection.DetectorActivity;
 import com.example.poc_flutter_app.ui.activity.MapActivity;
+import com.example.poc_flutter_app.ui.activity.ReservedActivity;
 
 
 /**
@@ -64,6 +65,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
                 jumpTo(DetectorActivity.class);
                 break;
             case R.id.layout_reserved:
+                jumpTo(ReservedActivity.class);
                 break;
 
 

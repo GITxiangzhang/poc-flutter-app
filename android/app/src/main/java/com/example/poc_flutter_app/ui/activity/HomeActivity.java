@@ -5,26 +5,23 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
-import android.widget.LinearLayout;
 
 import com.example.poc_flutter_app.R;
 import com.example.poc_flutter_app.ui.fragment.HomeFragment;
 import com.example.poc_flutter_app.ui.fragment.SecondFragment;
 import com.example.poc_flutter_app.ui.fragment.ThirdFragment;
 
+import io.flutter.app.FlutterFragmentActivity;
+import io.flutter.plugins.FlutterToAndroidPlugins;
+import io.flutter.plugins.GeneratedPluginRegistrant;
+
 /**
  * Created by Ryan on 26/03/2019.
  */
-public class HomeActivity extends AppCompatActivity implements
+public class HomeActivity extends FlutterFragmentActivity implements
         BottomNavigationView.OnNavigationItemSelectedListener {
-    private LinearLayout myreact;
-    private ViewPager viewPager;
     private BottomNavigationView bottomNavigationView;
-    private MenuItem menuItem;
-
     private HomeFragment fragmentHome;
     private SecondFragment secondFragment;
     private ThirdFragment thirdFragment;
@@ -39,6 +36,7 @@ public class HomeActivity extends AppCompatActivity implements
         initView();
         initValue();
         initEvent();
+
     }
 
     private void initEvent() {
@@ -49,20 +47,7 @@ public class HomeActivity extends AppCompatActivity implements
     }
 
     private void initView() {
-        //ReactNative相关
-//        myreact = (LinearLayout) findViewById(R.id.react_root_layout);//原生布局中的view
-//        mReactRootView = new ReactRootView(this);
-//        mReactInstanceManager = ReactInstanceManager.builder()
-//                .setApplication(getApplication())
-//                .setCurrentActivity(this)
-//                .setBundleAssetName("index.android.bundle")
-//                .setJSMainModulePath("index")
-//                .addPackage(new MainReactPackage())
-//                .setUseDeveloperSupport(BuildConfig.DEBUG)
-//                .setInitialLifecycleState(LifecycleState.RESUMED)
-//                .build();
-//        mReactRootView.startReactApplication(mReactInstanceManager, "pocRNApp", null);//启动入口
-//        myreact.addView(mReactRootView);//添加react布局
+
         bottomNavigationView = findViewById(R.id.bnv);
         initFragment();
     }
@@ -113,8 +98,6 @@ public class HomeActivity extends AppCompatActivity implements
 
 
     }
-
-
 
 
     @Override

@@ -1,6 +1,7 @@
 package io.flutter.plugins;
 
 import io.flutter.app.FlutterActivity;
+import io.flutter.app.FlutterFragmentActivity;
 import io.flutter.plugin.common.MethodCall;
 import io.flutter.plugin.common.MethodChannel;
 
@@ -9,13 +10,13 @@ import io.flutter.plugin.common.MethodChannel;
  */
 public class FlutterToAndroidPlugins implements MethodChannel.MethodCallHandler{
 
-    private FlutterActivity activity;
+    private FlutterFragmentActivity activity;
 
-    private FlutterToAndroidPlugins(FlutterActivity activity) {
+    private FlutterToAndroidPlugins(FlutterFragmentActivity activity) {
         this.activity = activity;
     }
 
-    public static void registerWith(FlutterActivity activity) {
+    public static void registerWith(FlutterFragmentActivity activity) {
         FlutterToAndroidPlugins instance = new FlutterToAndroidPlugins(activity);
         //flutter调用原生
         MethodChannel channel = new MethodChannel(activity.registrarFor(DealMethodCall.channels_flutter_to_native)
