@@ -8,14 +8,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#cccccc"
-        android:padding="30dp"
-        android:text="原生部分"/>
+        android:padding="20dp"
+        android:text="原生"/>
 
     <LinearLayout
-        android:id="@+id/fluuter_layout"
+        android:id="@+id/lv"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-    </LinearLayout>
+        android:layout_height="wrap_content"
+        android:orientation="vertical"></LinearLayout>
 </LinearLayout>
