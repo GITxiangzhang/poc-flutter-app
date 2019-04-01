@@ -13,6 +13,7 @@
 #import "MapViewController.h"
 #import "CameraViewController.h"
 #import "NativeAlertView.h"
+#import "CameraListController.h"
 
 #import "FlutterContainerVC.h"
 
@@ -98,7 +99,7 @@
             break;
         case 2:{
             //camera
-            CameraViewController *vc = [[CameraViewController alloc] init];
+            CameraListController *vc = [[CameraListController alloc] init];
             [self pushVc:vc];
         }
             break;
