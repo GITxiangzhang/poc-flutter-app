@@ -27,6 +27,7 @@ public class HomeActivity extends FlutterFragmentActivity implements
     private ThirdFragment thirdFragment;
     private Fragment[] fragments;
     private int lastfragment;
+    private String permissions;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,11 +40,14 @@ public class HomeActivity extends FlutterFragmentActivity implements
 
     }
 
+
+
     private void initEvent() {
         bottomNavigationView.setOnNavigationItemSelectedListener(this);
     }
 
     private void initValue() {
+
     }
 
     private void initView() {

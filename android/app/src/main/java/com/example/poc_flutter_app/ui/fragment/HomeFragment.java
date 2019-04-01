@@ -12,7 +12,7 @@ import com.example.poc_flutter_app.MainActivity;
 import com.example.poc_flutter_app.R;
 import com.example.poc_flutter_app.detection.DetectorActivity;
 import com.example.poc_flutter_app.ui.activity.MapActivity;
-import com.example.poc_flutter_app.ui.activity.ReservedActivity;
+import com.example.poc_flutter_app.ui.activity.EncryptActivity;
 
 
 /**
@@ -38,7 +38,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         webPageLayout = getActivity().findViewById(R.id.layout_web);
         mapLayout = getActivity().findViewById(R.id.layout_map);
         cameraLayout = getActivity().findViewById(R.id.layout_camera);
-        reservedLayout = getActivity().findViewById(R.id.layout_reserved);
+        reservedLayout = getActivity().findViewById(R.id.layout_encrypt_photo);
         initEvent();
     }
 
@@ -64,8 +64,8 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
                 //跳转至camera页面
                 jumpTo(DetectorActivity.class);
                 break;
-            case R.id.layout_reserved:
-                jumpTo(ReservedActivity.class);
+            case R.id.layout_encrypt_photo:
+                jumpTo(EncryptActivity.class);
                 break;
 
 
