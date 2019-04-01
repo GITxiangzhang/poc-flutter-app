@@ -1,23 +1,51 @@
 PODS:
+  - AMap3DMap (6.7.0):
+    - AMapFoundation (~> 1.5)
   - amap_location (0.0.1):
     - AMapLocation
     - Flutter
   - AMapFoundation (1.5.6)
   - AMapLocation (2.6.1):
     - AMapFoundation (~> 1.4)
+  - AMapSearch (6.6.0):
+    - AMapFoundation (~> 1.4)
   - Flutter (1.0.0)
   - flutter_webview_plugin (0.0.1):
     - Flutter
+  - FMDB/SQLCipher (2.7.5):
+    - SQLCipher
+  - KLCPopup (1.0)
+  - Masonry (1.1.0)
+  - SQLCipher (4.1.0):
+    - SQLCipher/standard (= 4.1.0)
+  - SQLCipher/common (4.1.0)
+  - SQLCipher/standard (4.1.0):
+    - SQLCipher/common
+  - TZImagePickerController (3.2.0)
 
 DEPENDENCIES:
+  - AMap3DMap
   - amap_location (from `.symlinks/plugins/amap_location/ios`)
+  - AMapLocation
+  - AMapSearch
   - Flutter (from `.symlinks/flutter/ios`)
   - flutter_webview_plugin (from `.symlinks/plugins/flutter_webview_plugin/ios`)
+  - FMDB/SQLCipher
+  - KLCPopup
+  - Masonry
+  - TZImagePickerController
 
 SPEC REPOS:
-  https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
+    - AMap3DMap
     - AMapFoundation
     - AMapLocation
+    - AMapSearch
+    - FMDB
+    - KLCPopup
+    - Masonry
+    - SQLCipher
+    - TZImagePickerController
 
 EXTERNAL SOURCES:
   amap_location:
@@ -28,12 +56,19 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/flutter_webview_plugin/ios"
 
 SPEC CHECKSUMS:
+  AMap3DMap: 7bb992e6bfb99e34e6c7a368958dde9d743a23f1
   amap_location: a3e2a140bb25950d4e97560ce1b00e53a121e4f4
   AMapFoundation: 20fce2a12cd152e1092afdd04379cdac21932185
   AMapLocation: cf024b53dc03663efb4ea4bcce27d4cce58bb97a
+  AMapSearch: def5983c8ca1a6d7430970046dc814f6e337621d
   Flutter: 58dd7d1b27887414a370fcccb9e645c08ffd7a6a
   flutter_webview_plugin: ed9e8a6a96baf0c867e90e1bce2673913eeac694
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  KLCPopup: 76c5a19227977f1e53d85236f9ef42257c168d98
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  SQLCipher: efbdb52cdbe340bcd892b1b14297df4e07241b7f
+  TZImagePickerController: 7850b158d025065b162a1a963d445040b828abc9
 
-PODFILE CHECKSUM: 1f91b37917c3847664b6bc594860a9911fb88c0d
+PODFILE CHECKSUM: 06b9c29ae01d8712b6d6c508228b2974decbb8f7
 
 COCOAPODS: 1.6.1
