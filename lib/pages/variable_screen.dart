@@ -1,12 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 class VariableScreen extends StatelessWidget {
+
+static const platform = const MethodChannel('pages/variable_screen');
+Future<void> popTheAlert() async {
+    try {
+      final String result = await platform.invokeMethod('popTheAlert');
+      print(result);
+    } catch (e) {
+    }
+}
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('VARIABLE'),
-      ),
+      // appBar: AppBar(
+      //   title: Text('VARIABLE'),
+      // ),
       body: Column(
         children: <Widget>[
           Container(
@@ -15,7 +25,7 @@ class VariableScreen extends StatelessWidget {
                 Text('Welcome flutter page'),
                 RaisedButton(
                   child: Text('弹出原生框'),
-                  onPressed: () {},
+                  onPressed: popTheAlert,
                   color: Colors.blueAccent,
                 ),
               ],

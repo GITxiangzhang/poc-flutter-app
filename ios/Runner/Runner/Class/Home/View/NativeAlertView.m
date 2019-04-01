@@ -15,13 +15,14 @@
 @property (nonatomic, strong) KLCPopup *customPopup;
 //输入框
 @property (weak, nonatomic) IBOutlet UITextField *nativeTF;
+@property (nonatomic, copy) CompleteEdit completeEdit;
 
 @end
 
 @implementation NativeAlertView
 
-- (void)showActionPopView {
-    
+- (void)showActionPopViewComplete:(CompleteEdit)complete {
+
     KLCPopupLayout layout = KLCPopupLayoutMake(KLCPopupHorizontalLayoutCenter, KLCPopupVerticalLayoutCenter);
     KLCPopup *popup = [KLCPopup popupWithContentView:self
                                             showType:KLCPopupShowTypeShrinkIn
@@ -31,10 +32,14 @@
                                dismissOnContentTouch:NO];
     popup.dimmedMaskAlpha = 0.5;
     self.customPopup = popup;
+    self.completeEdit = complete;
     [popup showWithLayout:layout];
 }
 
 - (IBAction)pop:(UIButton *)sender {
+    if (self.completeEdit) {
+        self.completeEdit(self.nativeTF.text);
+    }
     [self.customPopup dismiss:YES];
 }
 

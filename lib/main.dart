@@ -3,6 +3,7 @@ import './compontents/bottom_nav.dart';
 import 'package:amap_location/amap_location.dart';
 import 'util/InteractNative.dart';
 // import './home.dart';
+import 'pages/variable_screen.dart';
 
 void main() => {
       AMapLocationClient.setApiKey('7c643109d6c50331e82d3dc15e400dea'),
@@ -15,6 +16,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         title: 'Flutter bottomNavigationBar',
         theme: ThemeData.light(),
+        //注册路由表
+        routes:{
+        "pages/variable_screen":(context)=>VariableScreen(),
+        } ,
         home: BottomNavigationWidget());
   }
 }

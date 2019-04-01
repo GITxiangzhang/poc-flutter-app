@@ -8,10 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void(^CompleteEdit)(NSString *text);
 @interface NativeAlertView : UIView
 
 //显示视图
-- (void)showActionPopView;
+- (void)showActionPopViewComplete:(CompleteEdit)complete;
 
 @end
 
