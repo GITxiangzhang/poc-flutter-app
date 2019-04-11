@@ -122,7 +122,7 @@
     BOOL success = [_database open];
     
     if (!success) {
-       success = [_database setKey:@"1234key"];
+//       success = [_database setKey:@"1234key"];
         NSLog(@"数据库开始加密");
     }
     

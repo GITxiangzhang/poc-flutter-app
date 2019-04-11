@@ -36,7 +36,8 @@ target 'Runner' do
   pod 'AMapSearch'
   pod 'TZImagePickerController'
   pod 'KLCPopup'
-  pod 'FMDB/SQLCipher'
+  pod 'FMDB'
+  # pod 'FMDB/SQLCipher'
   
   system('rm -rf .symlinks')
   system('mkdir -p .symlinks/plugins')
