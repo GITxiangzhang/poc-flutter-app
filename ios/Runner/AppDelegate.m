@@ -13,8 +13,8 @@
   // Override point for customization after application launch.
     
     /**  高德地图 */
-//    [self initAMapKit];
-//    self.window.rootViewController = [self initialRootViewController];
+    [self initAMapKit];
+    self.window.rootViewController = [self initialRootViewController];
 //    
   return [super application:application didFinishLaunchingWithOptions:launchOptions];
 }
